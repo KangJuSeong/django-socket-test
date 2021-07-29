@@ -25,7 +25,7 @@ SECRET_KEY = 'bxsl7#ksrog^l(*(k)_&v)f@un)sqy94j$()!y#iqc7qu2x^1i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'websocket.wsgi.application'
+# WSGI_APPLICATION = 'websocket.wsgi.application'
 ASGI_APPLICATION = 'websocket.asgi.application'
 
 CHANNEL_LAYERS = {
